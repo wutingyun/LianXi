@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类选择器以及伪元素</title>
+		<style>
+			:root{
+				background: gray;
+			}
+			body{
+				background:#fff ;
+			}
+			p.left{
+				text-align: left;
+				color:goldenrod ;
+			}
+			p.right{
+				text-align: right;
+				color: rosybrown;
+			}
+			a:link{
+				color:#000;
+			}
+			a:visited{
+				color:fuchsia;
+			}
+			a:hover{
+				color:green;
+			}
+			a:active{
+				color:#f60;
+			}
+			p:first-line{
+				color:#f60;
+			}
+			p:first-letter{
+				color: green;
+				font-size: 24px;
+			}
+			li{
+				list-style: none;
+			}
+			li:before{
+				content:" ......";
+				color: red;
+			}
+			li:after{
+				content: "_after追加";
+				color:#FF6600;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>类选择器</h1>
+		<p class="left">伪类选择器以及伪元素</p>
+		<p class="right">伪类选择器以及伪元素</p>
+		
+		<br />
+		<a href="css3属性选择器1.html">伪类选择器</a>
+		
+		<br />
+		<p>
+			在css中，主要有四个伪元素选择器<br />
+			first-line 伪元素选择器：用于向某个元素中的第一行文字使用样式
+		</p>
+		
+		<br />
+		<ul>
+			<li><a href="css3属性选择器1.html">伪类选择器</a></li>
+			<li><a href="css3属性选择器1.html">伪类选择器</a></li>
+			<li><a href="css3属性选择器1.html">伪类选择器</a></li>
+			<li><a href="css3属性选择器1.html">伪类选择器</a></li>
+			<li><a href="css3属性选择器1.html">伪类选择器</a></li>
+			<li><a href="css3属性选择器1.html">伪类选择器</a></li>
+		</ul>
+	</body>
+</html>
