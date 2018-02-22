@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类选择器E::selection</title>
+		<style>
+			::selection{
+				background: green;
+				color: #fff;
+			}
+			input[type="text"]::selection{
+				background: #f60;
+				color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>伪类选择器E::selection</h1>
+		<p>伪类选择器测试伪类选择器测试伪类选择器测试伪类选择器测试伪类选择器测试伪类选择器测试伪类选择器测试</p>
+		<input type="text" placeholder="本文" />
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>E:read-only伪类选择器与E:read-write伪类选择器</title>
+		<style>
+			input[type="text"]:read-only{
+				background: black;
+				color: green;
+			}
+			input[type="text"]:read-write{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>E:read-only伪类选择器与E:read-write伪类选择器</h1>
+		<form>
+			姓名：<input type="text" placeholder="请输入用户名" value="吴某某" readonly/>
+			<br />
+			<br />
+			学校：<input type="text" placeholder="请输入学校" />
+		</form>
+	</body>
+</html>
